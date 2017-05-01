@@ -1,0 +1,109 @@
+body {
+  font-size: 100%;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color: #2d2d2d;
+}
+
+/* TODO: size images manually so this is not necessary */
+img {
+  max-height: 20rem;
+}
+
+/***************** NAV *****************/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 136rem;
+    height: 8rem;
+    background-color: lightgrey;
+    /*position: absolute;*/
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 13rem;
+    height: 5rem;
+    margin: 5rem;
+    margin-left: 10rem;
+    font-size: 3rem;
+    
+    /*position: relative;*/
+}
+
+/*nav a:hover {
+  text-decoration: underline;
+}*/
+
+/**************** HERO *****************/
+
+header img {
+  max-height: 6rem;
+}
+/*h1 .logo-w {
+  font-size: 3.5rem;
+  margin-top: 30rem;
+  margin-left: 18rem;
+}*/
+
+
+/***************icon*******************/
+/**************** ASIDE ****************/
+
+input[type="submit"] {
+  padding: .25rem;
+  background-color: #3D7FCF;
+  border: 1px solid #3D7FCF;
+  border-radius: 5px;
+  font-size: .75rem;
+  color: white;
+}
+
+/*********** PRODUCTS SECTION ***********/
+
+/*section {
+  padding: 0 .75rem;
+}*/
+
+h2 {
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+/*********************ROW INFORMATION**********************/
+
+.row
+{
+    margin-top: 2rem;
+    border:2px green solid;
+    
+}
+div[class*="col-"]
+{
+    background-color: antiquewhite;
+    
+    padding: 3rem;
+    height: 50rem;
+    /*float: right;*/
+    
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
