@@ -1,7 +1,11 @@
-body {
+* {
+  box-sizing: border-box;
+}
+
+/*body {
   font-size: 100%;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-}
+}*/
 
 p {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -10,26 +14,79 @@ p {
 }
 
 /* TODO: size images manually so this is not necessary */
-img {
+/*img {
   max-height: 20rem;
-}
+}*/
+
 
 /***************** NAV *****************/
 
-nav a:hover {
-  text-decoration: underline;
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 130rem;
+    height: 15rem;
+    background-color: lightgrey;
+
+    margin:auto;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+
+
+    /*position: absolute;*/
 }
+
+.flex-item {
+    /*background-color: cornflowerblue;*/
+    width: 13rem;
+    height: 5rem;
+    margin: 2rem;
+    margin-left: 10rem;
+    font-size: 5rem;
+   position: relative;
+
+}
+
+.add{
+  position: absolute;
+  bottom: .5rem;
+
+}
+i{
+  margin-left:10rem;
+  font-size:50px;
+
+}
+
+#btnViewCart
+{
+  height: 5rem;
+  width: 8rem;
+  margin-right: 10rem;
+}
+form{
+  margin-right:10rem;
+}
+
+
+/*nav a:hover {
+  text-decoration: underline;
+}*/
 
 /**************** HERO *****************/
 
 header img {
   max-height: 6rem;
 }
-
-h1 .logo-w {
+/*h1 .logo-w {
   font-size: 3.5rem;
-}
+  margin-top: 30rem;
+  margin-left: 18rem;
+}*/
 
+
+/***************icon*******************/
 /**************** ASIDE ****************/
 
 input[type="submit"] {
@@ -43,9 +100,26 @@ input[type="submit"] {
 
 /*********** PRODUCTS SECTION ***********/
 
-section {
+/*section {
   padding: 0 .75rem;
-}
+}*/
+img {
+      max-width: 100%;
+    }
+
+    .photo-container {
+      width: 80%;
+      margin: auto;
+    /*  border: solid 1px rgba(189, 63, 191, 0.62);*/
+
+    }
+
+    .photo-frame {
+      /* equivalent to 49.5% of total browser width,
+      to make calculating srcset easier for us :) */
+      margin: auto;
+      width: 55%;
+    }
 
 h2 {
   padding-top: 1.5rem;
@@ -58,4 +132,22 @@ h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #2d2d2d;
+}
+
+/*********************ROW INFORMATION**********************/
+
+.row
+{
+    margin-top: 2rem;
+    border:2px green solid;
+
+}
+div[class*="col-"]
+{
+    background-color: antiquewhite;
+
+    padding: 3rem;
+    height: 50rem;
+    /*float: right;*/
+
 }
