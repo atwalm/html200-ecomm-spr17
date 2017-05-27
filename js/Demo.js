@@ -50,12 +50,14 @@ function addToCart() {
   if (index == -1) {
     // push an object into the array
     cart.push({ 'name':name, 'price':price });
+    console.log("cart length :" +cart.length +" to cart.");
 
     // change button text
     event.target.innerHTML = 'Remove from Cart';
   } else {
     // otherwise remove item from array
     cart.splice(index, 1);
+    console.log("cart length :" +cart.length +" to cart.");
 
     // change button text
     event.target.innerHTML = 'Add to Cart';
